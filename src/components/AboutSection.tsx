@@ -21,10 +21,10 @@ const AboutSection = () => {
           </p>
           
           <ul className="text-left mb-8 space-y-2">
-            <li className="flex items-start">
+            {/* <li className="flex items-start">
               <span className="mr-2 text-solar-blue font-bold">•</span>
-              <span>We started with the installation of a 73 kW system for the iconic Jagannath Temple in Puri</span>
-            </li>
+              <span>We started with the installation of a 73 kW system for the iconic Jagannath Temple in Puri</span> 
+            </li> */}
             <li className="flex items-start">
               <span className="mr-2 text-solar-blue font-bold">•</span>
               <span>We've gone from strength to strength, now powering over 5,000 homes across Odisha</span>
