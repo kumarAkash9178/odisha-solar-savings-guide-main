@@ -1,4 +1,4 @@
-
+import { useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
@@ -11,6 +11,18 @@ import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 
 const Index = () => {
+  useEffect(() => {
+    // Smooth scroll to #contact if hash is present in URL
+    if (window.location.hash === "#contact") {
+      const el = document.getElementById("contact");
+      if (el) {
+        setTimeout(() => {
+          el.scrollIntoView({ behavior: "smooth" });
+        }, 100); // Slight delay to ensure page layout is ready
+      }
+    }
+  }, []);
+
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
@@ -22,7 +34,7 @@ const Index = () => {
         <FeaturesSection />
         <TestimonialsSection />
         <SolarCalculator />
-        <ContactSection />
+        <ContactSection /> {/* This must have id="contact" */}
       </main>
       <Footer />
     </div>

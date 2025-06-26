@@ -1,6 +1,6 @@
-
 import { useState } from "react";
-import { Button } from "@/components/ui/button";
+// import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -9,32 +9,54 @@ const Navbar = () => {
     <nav className="bg-white/90 backdrop-blur-sm sticky top-0 z-50 shadow-sm py-4">
       <div className="container mx-auto px-4 flex justify-between items-center">
         <div className="flex items-center">
-          <img 
-            src="/lovable-uploads/dc677fc6-7cfc-40ee-a0f8-f37ef7edccdf.png" 
-            alt="Clans Logo" 
-            className="h-10" 
+          <img
+            src="/lovable-uploads/dc677fc6-7cfc-40ee-a0f8-f37ef7edccdf.png"
+            alt="Clans Logo"
+            className="h-10"
           />
         </div>
-        
+
         {/* Desktop Navigation */}
         <div className="hidden md:flex space-x-8">
-          <a href="#benefits" className="text-gray-700 hover:text-solar-blue transition-colors">
+          <a
+            href="#benefits"
+            className="text-gray-700 hover:text-solar-blue transition-colors"
+          >
             Benefits
           </a>
-          <a href="#calculator" className="text-gray-700 hover:text-solar-blue transition-colors">
+          <a
+            href="#calculator"
+            className="text-gray-700 hover:text-solar-blue transition-colors"
+          >
             Savings Calculator
           </a>
-          <a href="#contact" className="text-gray-700 hover:text-solar-blue transition-colors">
+          <a
+            href="#contact"
+            className="text-gray-700 hover:text-solar-blue transition-colors"
+          >
             Contact
           </a>
+          <Link
+            to="/installation"
+            className="text-gray-700 hover:text-solar-blue transition-colors"
+          >
+            Installation & Testimonials
+          </Link>
+                    <Link
+            to="/Products"
+            className="text-gray-700 hover:text-solar-blue transition-colors"
+          >
+            Products
+          </Link>
+
         </div>
-        
-        <div className="hidden md:block">
+
+        {/* <div className="hidden md:block">
           <Button className="bg-solar-blue hover:bg-solar-blue/90 text-white">
             Get Free Quote
           </Button>
-        </div>
-        
+        </div> */}
+
         {/* Mobile Navigation Toggle */}
         <button
           className="md:hidden focus:outline-none"
@@ -65,7 +87,7 @@ const Navbar = () => {
           </svg>
         </button>
       </div>
-      
+
       {/* Mobile Navigation Menu */}
       {isMenuOpen && (
         <div className="md:hidden py-4 bg-white shadow-lg">
@@ -91,9 +113,24 @@ const Navbar = () => {
             >
               Contact
             </a>
-            <Button className="bg-solar-blue hover:bg-solar-blue/90 text-white w-full">
+            <Link
+              to="/installation"
+              className="text-gray-700 hover:text-solar-blue transition-colors py-2"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Installation & Testimonials
+            </Link>
+            <Link
+              to="/Products"
+              className="text-gray-700 hover:text-solar-blue transition-colors py-2"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Products
+            </Link>
+
+            {/* <Button className="bg-solar-blue hover:bg-solar-blue/90 text-white w-full">
               Get Free Quote
-            </Button>
+            </Button> */}
           </div>
         </div>
       )}
