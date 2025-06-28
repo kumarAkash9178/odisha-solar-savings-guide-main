@@ -22,7 +22,7 @@ const Products = () => {
         </Link>
       </div>
 
-      <Hero />
+      {/* <Hero /> */}
       <ProductGrid />
       <Features />
       <CTA />

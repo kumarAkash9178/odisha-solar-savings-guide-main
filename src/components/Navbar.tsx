@@ -52,7 +52,7 @@ const Navbar = () => {
             to="/PrivacyPolicyIndex"
             className="text-gray-700 hover:text-solar-blue transition-colors"
           >
-            Privacy Guardian
+            Privacy Policy
           </Link>
           <Link
             to="/Achievements"
@@ -143,7 +143,7 @@ const Navbar = () => {
               className="text-gray-700 hover:text-solar-blue transition-colors py-2"
               onClick={() => setIsMenuOpen(false)}
             >
-              Privacy Guardian
+              Privacy Policy
             </Link>
             <Link
               to="/Achievements"
