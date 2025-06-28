@@ -1,11 +1,17 @@
-
-//import { Button } from '@/components/ui/button';
-import { Card, CardContent } from '@/components/ui/card';
-import { Zap, Leaf, MapPin, ArrowRight, Play, Star, Users, CheckCircle } from 'lucide-react';
+import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
+import { Card, CardContent } from "@/components/ui/card";
+import { MapPin, ArrowLeft, Play, Star, CheckCircle } from "lucide-react";
 
 const Installation = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-solar-light via-white to-solar-light/50">
+      <Link to="/">
+        <Button variant="ghost" size="sm">
+          <ArrowLeft className="w-4 h-4 mr-2" />
+          Back to Home
+        </Button>
+      </Link>
       {/* Header with Company Logo */}
       {/* <header className="bg-white shadow-lg sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4">
@@ -21,7 +27,7 @@ const Installation = () => {
           </div>
         </div>
       </header> */}
-      
+
       {/* Hero Section */}
       {/* <section className="relative py-20 overflow-hidden">
         <div className="container mx-auto px-4">
@@ -136,15 +142,16 @@ const Installation = () => {
               Our Solar Installations Across Odisha
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
-              Explore our successful solar projects and installations across different cities in Odisha
+              Explore our successful solar projects and installations across
+              different cities in Odisha
             </p>
           </div>
 
           {/* Featured Installations */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
             <Card className="overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
-              <img 
-                src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=400&h=250&fit=crop" 
+              <img
+                src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=400&h=250&fit=crop"
                 alt="Bhubaneswar Solar Installation"
                 className="w-full h-48 object-cover"
               />
@@ -161,14 +168,16 @@ const Installation = () => {
                 </p>
                 <div className="flex items-center gap-2">
                   <CheckCircle size={16} className="text-green-500" />
-                  <span className="text-sm text-gray-600">Completed in 2024</span>
+                  <span className="text-sm text-gray-600">
+                    Completed in 2024
+                  </span>
                 </div>
               </CardContent>
             </Card>
-            
+
             <Card className="overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
-              <img 
-                src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=400&h=250&fit=crop" 
+              <img
+                src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=400&h=250&fit=crop"
                 alt="Cuttack Solar Installation"
                 className="w-full h-48 object-cover"
               />
@@ -185,14 +194,16 @@ const Installation = () => {
                 </p>
                 <div className="flex items-center gap-2">
                   <CheckCircle size={16} className="text-green-500" />
-                  <span className="text-sm text-gray-600">Completed in 2024</span>
+                  <span className="text-sm text-gray-600">
+                    Completed in 2024
+                  </span>
                 </div>
               </CardContent>
             </Card>
-            
+
             <Card className="overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
-              <img 
-                src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=400&h=250&fit=crop" 
+              <img
+                src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=400&h=250&fit=crop"
                 alt="Puri Solar Installation"
                 className="w-full h-48 object-cover"
               />
@@ -209,14 +220,16 @@ const Installation = () => {
                 </p>
                 <div className="flex items-center gap-2">
                   <CheckCircle size={16} className="text-green-500" />
-                  <span className="text-sm text-gray-600">Completed in 2024</span>
+                  <span className="text-sm text-gray-600">
+                    Completed in 2024
+                  </span>
                 </div>
               </CardContent>
             </Card>
 
             <Card className="overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
-              <img 
-                src="https://images.unsplash.com/photo-1559302504-64aae6ca6b6d?w=400&h=250&fit=crop" 
+              <img
+                src="https://images.unsplash.com/photo-1559302504-64aae6ca6b6d?w=400&h=250&fit=crop"
                 alt="Rourkela Solar Installation"
                 className="w-full h-48 object-cover"
               />
@@ -233,14 +246,16 @@ const Installation = () => {
                 </p>
                 <div className="flex items-center gap-2">
                   <CheckCircle size={16} className="text-green-500" />
-                  <span className="text-sm text-gray-600">Completed in 2023</span>
+                  <span className="text-sm text-gray-600">
+                    Completed in 2023
+                  </span>
                 </div>
               </CardContent>
             </Card>
 
             <Card className="overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
-              <img 
-                src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?w=400&h=250&fit=crop" 
+              <img
+                src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?w=400&h=250&fit=crop"
                 alt="Berhampur Solar Installation"
                 className="w-full h-48 object-cover"
               />
@@ -257,14 +272,16 @@ const Installation = () => {
                 </p>
                 <div className="flex items-center gap-2">
                   <CheckCircle size={16} className="text-green-500" />
-                  <span className="text-sm text-gray-600">Completed in 2023</span>
+                  <span className="text-sm text-gray-600">
+                    Completed in 2023
+                  </span>
                 </div>
               </CardContent>
             </Card>
 
             <Card className="overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
-              <img 
-                src="https://images.unsplash.com/photo-1466611653911-95081537e5b7?w=400&h=250&fit=crop" 
+              <img
+                src="https://images.unsplash.com/photo-1466611653911-95081537e5b7?w=400&h=250&fit=crop"
                 alt="Sambalpur Solar Installation"
                 className="w-full h-48 object-cover"
               />
@@ -281,7 +298,9 @@ const Installation = () => {
                 </p>
                 <div className="flex items-center gap-2">
                   <CheckCircle size={16} className="text-green-500" />
-                  <span className="text-sm text-gray-600">Completed in 2024</span>
+                  <span className="text-sm text-gray-600">
+                    Completed in 2024
+                  </span>
                 </div>
               </CardContent>
             </Card>
@@ -297,12 +316,14 @@ const Installation = () => {
                 <div className="relative bg-gray-900 h-64 flex items-center justify-center">
                   <div className="text-center text-white">
                     <Play className="h-16 w-16 mx-auto mb-4 opacity-80" />
-                    <p className="text-lg">Bhubaneswar Installation Timelapse</p>
+                    <p className="text-lg">
+                      Bhubaneswar Installation Timelapse
+                    </p>
                     <p className="text-sm opacity-70">5 min video</p>
                   </div>
                 </div>
               </Card>
-              
+
               <Card className="overflow-hidden">
                 <div className="relative bg-gray-900 h-64 flex items-center justify-center">
                   <div className="text-center text-white">
@@ -318,19 +339,27 @@ const Installation = () => {
           {/* Stats Section */}
           <div className="grid md:grid-cols-4 gap-8 text-center">
             <div className="bg-white p-6 rounded-xl shadow-lg">
-              <div className="text-3xl font-bold text-solar-primary mb-2">500+</div>
+              <div className="text-3xl font-bold text-solar-primary mb-2">
+                500+
+              </div>
               <div className="text-gray-600">kW Installed</div>
             </div>
             <div className="bg-white p-6 rounded-xl shadow-lg">
-              <div className="text-3xl font-bold text-solar-primary mb-2">50+</div>
+              <div className="text-3xl font-bold text-solar-primary mb-2">
+                50+
+              </div>
               <div className="text-gray-600">Projects Completed</div>
             </div>
             <div className="bg-white p-6 rounded-xl shadow-lg">
-              <div className="text-3xl font-bold text-solar-primary mb-2">15+</div>
+              <div className="text-3xl font-bold text-solar-primary mb-2">
+                15+
+              </div>
               <div className="text-gray-600">Cities Covered</div>
             </div>
             <div className="bg-white p-6 rounded-xl shadow-lg">
-              <div className="text-3xl font-bold text-solar-primary mb-2">100+</div>
+              <div className="text-3xl font-bold text-solar-primary mb-2">
+                100+
+              </div>
               <div className="text-gray-600">Happy Customers</div>
             </div>
           </div>
@@ -345,50 +374,59 @@ const Installation = () => {
               What Our Customers Say
             </h2>
           </div>
-          
+
           <div className="grid md:grid-cols-3 gap-8">
             <Card className="p-6 text-center">
               <CardContent className="p-0">
                 <div className="flex justify-center mb-4">
                   {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />
+                    <Star
+                      key={i}
+                      className="h-5 w-5 text-yellow-400 fill-current"
+                    />
                   ))}
                 </div>
                 <p className="text-gray-600 mb-4 italic">
-                  "Clans Machina installed our solar panels with great professionalism. 
-                  Our electricity bills have reduced by 80%!"
+                  "Clans Machina installed our solar panels with great
+                  professionalism. Our electricity bills have reduced by 80%!"
                 </p>
                 <h4 className="font-bold text-solar-tertiary">Rajesh Kumar</h4>
                 <p className="text-sm text-gray-500">Bhubaneswar</p>
               </CardContent>
             </Card>
-            
+
             <Card className="p-6 text-center">
               <CardContent className="p-0">
                 <div className="flex justify-center mb-4">
                   {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />
+                    <Star
+                      key={i}
+                      className="h-5 w-5 text-yellow-400 fill-current"
+                    />
                   ))}
                 </div>
                 <p className="text-gray-600 mb-4 italic">
-                  "Excellent service and quality installation. The team was very knowledgeable 
-                  and completed the work on time."
+                  "Excellent service and quality installation. The team was very
+                  knowledgeable and completed the work on time."
                 </p>
                 <h4 className="font-bold text-solar-tertiary">Priya Sharma</h4>
                 <p className="text-sm text-gray-500">Cuttack</p>
               </CardContent>
             </Card>
-            
+
             <Card className="p-6 text-center">
               <CardContent className="p-0">
                 <div className="flex justify-center mb-4">
                   {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />
+                    <Star
+                      key={i}
+                      className="h-5 w-5 text-yellow-400 fill-current"
+                    />
                   ))}
                 </div>
                 <p className="text-gray-600 mb-4 italic">
-                  "Great investment for our business. The solar installation pays for itself 
-                  through energy savings."
+                  "Great investment for our business. The solar installation
+                  pays for itself through energy savings."
                 </p>
                 <h4 className="font-bold text-solar-tertiary">Amit Patel</h4>
                 <p className="text-sm text-gray-500">Rourkela</p>

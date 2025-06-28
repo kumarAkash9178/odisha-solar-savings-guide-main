@@ -11,6 +11,8 @@ import NotFound from "./pages/NotFound";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import ScrollToTop from "@/components/ScrollToTop";
 import Products from "./pages/Products";
+import PrivacyPolicyIndex from "./pages/PrivacyPolicyIndex";
+import Achievements from "./pages/Achievements";
 
 const queryClient = new QueryClient();
 
@@ -26,6 +28,8 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/installation" element={<Installations />} />
           <Route path="/products" element={<Products/>} /> {/* ✅ New Route */}
+          <Route path="/privacyPolicyIndex" element={<PrivacyPolicyIndex />} />
+          <Route path="/achievements" element={<Achievements />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
 

@@ -42,13 +42,24 @@ const Navbar = () => {
           >
             Installation & Testimonials
           </Link>
-                    <Link
+          <Link
             to="/Products"
             className="text-gray-700 hover:text-solar-blue transition-colors"
           >
             Products
           </Link>
-
+          <Link
+            to="/PrivacyPolicyIndex"
+            className="text-gray-700 hover:text-solar-blue transition-colors"
+          >
+            Privacy Guardian
+          </Link>
+          <Link
+            to="/Achievements"
+            className="text-gray-700 hover:text-solar-blue transition-colors"
+          >
+            Achievements
+          </Link>
         </div>
 
         {/* <div className="hidden md:block">
@@ -126,6 +137,20 @@ const Navbar = () => {
               onClick={() => setIsMenuOpen(false)}
             >
               Products
+            </Link>
+            <Link
+              to="/PrivacyPolicyIndex"
+              className="text-gray-700 hover:text-solar-blue transition-colors py-2"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Privacy Guardian
+            </Link>
+            <Link
+              to="/Achievements"
+              className="text-gray-700 hover:text-solar-blue transition-colors py-2"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Achievements
             </Link>
 
             {/* <Button className="bg-solar-blue hover:bg-solar-blue/90 text-white w-full">
