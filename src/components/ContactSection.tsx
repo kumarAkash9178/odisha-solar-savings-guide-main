@@ -14,7 +14,7 @@ const ContactSection = () => {
     pincode: "",
     billRange: "",
   });
-  
+
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [agreed, setAgreed] = useState(false);
 
@@ -42,11 +42,11 @@ const ContactSection = () => {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch(
+      await fetch(
         "https://script.google.com/macros/s/AKfycbypD0CuUo-m7UV0GU_jEffILJ1X8LxPzTRcHwvtmYygw18mWSAsSTdokF5ogIrMu_A2vQ/exec",
         {
           method: "POST",
-          mode: "no-cors", // Prevents CORS errors for now (Apps Script doesn’t return CORS headers)
+          mode: "no-cors",
           headers: {
             "Content-Type": "application/json",
           },
@@ -54,7 +54,6 @@ const ContactSection = () => {
         }
       );
 
-      // Since mode is "no-cors", we can't read response content, so just assume success
       toast({
         title: "Consultation request sent!",
         description: "We'll get back to you as soon as possible.",
@@ -99,7 +98,7 @@ const ContactSection = () => {
               <h2 className="text-2xl md:text-3xl font-bold">
                 Book a FREE Solar Consultation
               </h2>
-              <p className="mt-2">And save up to ₹78,000 with subsidy</p>
+              <p className="mt-2">And save up to ₹1,38,000 with subsidy</p>
             </div>
 
             <form onSubmit={handleSubmit} className="p-6 space-y-6">
@@ -183,14 +182,14 @@ const ContactSection = () => {
                   className="data-[state=checked]:bg-solar-blue"
                 />
                 <Label htmlFor="terms" className="text-sm text-gray-600">
-                  I agree to OdishaSolar's terms of service & privacy policy
+                  I agree to Clansmachina's terms of service & privacy policy
                 </Label>
               </div>
 
               <Button
                 type="submit"
-                className="w-full bg-blue-900 hover:bg-blue-800 text-white py-6"
-                disabled={isSubmitting}
+                className="w-full bg-blue-900 hover:bg-blue-800 text-white py-6 disabled:opacity-50 disabled:cursor-not-allowed"
+                disabled={isSubmitting || !agreed}
               >
                 {isSubmitting ? "Sending..." : "Get a FREE Quote"}
               </Button>
