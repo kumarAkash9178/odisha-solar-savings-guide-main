@@ -4,7 +4,7 @@ import { Award, Home, Zap, CreditCard } from "lucide-react";
 const stats = [
   {
     icon: <Award className="h-10 w-10 text-solar-blue" />,
-    count: "8+",
+    count: "19+",
     label: "Years of Experience"
   },
   {
